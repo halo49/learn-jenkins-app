@@ -1,7 +1,13 @@
 pipeline {
     agent any
 
+    // Aqui commienzan los stages
     stages {
+        /*
+            Aqui se desarrollan todos los stages
+            y con este tipo de comantarios se 
+            pueden deshabilitar stages completos
+        */
         stage('Build') {
             agent {
                 docker {
